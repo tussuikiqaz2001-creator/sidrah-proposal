@@ -147,7 +147,7 @@ const SidrahProposal = () => {
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{ 
-              backgroundImage: "url('public/images/1.jpeg')",
+              backgroundImage: "url('images/1.jpeg')",
               opacity: 0.7 
             }}
           />
@@ -225,10 +225,10 @@ const SidrahProposal = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             {[
-              { id: 1, caption: "I love you", src: "public/images/a.jpeg" },
-              { id: 2, caption: "Pure Happiness", src: "public/images/b.jpeg" },
-              { id: 3, caption: "Forever Together", src: "public/images/c.jpeg" },
-              { id: 4, caption: "My Everything", src: "public/images/d.jpeg" }
+              { id: 1, caption: "I love you", src: "images/a.jpeg" },
+              { id: 2, caption: "Pure Happiness", src: "images/b.jpeg" },
+              { id: 3, caption: "Forever Together", src: "images/c.jpeg" },
+              { id: 4, caption: "My Everything", src: "images/d.jpeg" }
             ].map((pic, idx) => (
               <motion.div
                 key={pic.id}
