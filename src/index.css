@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Great Vibes", cursive;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#fffafb] text-[#3d2b2b] font-sans overflow-x-hidden;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+.heart-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  animation: float linear infinite;
+}
+
+.glow-text-red {
+  text-shadow: 0 0 15px rgba(225, 29, 72, 0.3), 0 0 30px rgba(225, 29, 72, 0.1);
+}
+
+.romantic-card {
+  @apply bg-white/95 backdrop-blur-md border border-rose-100 shadow-[0_10px_40px_rgba(225,29,72,0.08)] rounded-[2rem];
+}
+
+.btn-vibrant {
+  @apply px-10 py-4 rounded-full transition-all duration-500 shadow-lg hover:shadow-rose-200 hover:scale-105 active:scale-95 font-semibold tracking-wide;
+}
+
+.btn-vibrant-primary {
+  @apply bg-[#e11d48] text-white hover:bg-[#be123c];
+}
+
+.btn-vibrant-secondary {
+  @apply bg-[#fce7f3] text-[#e11d48] hover:bg-[#fbcfe8];
+}
+
+.marble-overlay {
+  background-image: url('https://www.transparenttextures.com/patterns/white-marble.png');
+  opacity: 0.4;
+}
+
+.polaroid {
+  @apply bg-white p-3 pb-10 shadow-xl transition-all duration-500 hover:scale-105 hover:z-20 border border-black/5;
+}
+
+.polaroid-caption {
+  @apply font-display text-xl text-[#3d2b2b] mt-3 text-center;
+}
+
+.polaroid-1 { transform: rotate(-3deg); }
+.polaroid-2 { transform: rotate(2deg); }
+.polaroid-3 { transform: rotate(-1deg); }
+.polaroid-4 { transform: rotate(4deg); }
