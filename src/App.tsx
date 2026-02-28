@@ -228,7 +228,7 @@ const SidrahProposal = () => {
               { id: 1, caption: "I love you", src: "images/a.jpeg" },
               { id: 2, caption: "Pure Happiness", src: "images/b.jpeg" },
               { id: 3, caption: "Forever Together", src: "images/c.jpeg" },
-              { id: 4, caption: "My Everything", src: "images/d.jpeg" }
+              { id: 4, caption: "Your Everything", src: "images/d.jpeg" }
             ].map((pic, idx) => (
               <motion.div
                 key={pic.id}
